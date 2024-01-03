@@ -163,7 +163,8 @@ console.log("isGreaterThan:", isGreaterThan)
 
 // AND // OR
 // &&  // ||
-// in order to get true. Both conditions have to be true
+// with AND in order to get true. Both conditions have to be true
+// with OR if one of them is true its true. 
 //               true      true  = true
 let andResult = (5 > 4 && 10 > 5);
 console.log(andResult)
@@ -171,3 +172,9 @@ console.log(andResult)
 //false      true      true
 let orResult = (5 > 10 || 10 > 5);
 console.log(orResult)
+
+// Not
+
+// !(5 > 10) // false
+// true
+
