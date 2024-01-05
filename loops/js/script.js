@@ -25,15 +25,6 @@ for (let i = 0; i < totalNumberOfCars; i++) {
     console.log(cars[i]);
 }
 
-const fruits = ["Apple", "Banana", "Cherry"];
-
-const totalNumberOfFruits = fruits.length;
-
-
-for (let i = 0; i < totalNumberOfFruits; i++) {
-    console.log(fruits[i]);
-}
-
 // 0 // good
 // 1 
 // 2
@@ -68,3 +59,22 @@ for (let i = 0; i < totalNumberOfFruits; i++) {
 // false
 
 // it goes like this until the condition is false
+
+                // 0        1          2
+const fruits = ["Apple", "Banana", "Cherry"];
+
+const totalNumberOfFruits = fruits.length;
+
+
+for (let i = 0; i < totalNumberOfFruits; i++) {
+    console.log(fruits[i]);
+}
+
+// Get the last item in the array
+console.log(fruits.length -1);
+
+const LastItemInTheArray = fruits.length -1;
+console.log(fruits[LastItemInTheArray]);
+
+
+
