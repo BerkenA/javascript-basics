@@ -1,80 +1,50 @@
-// loop is for repeating!!
+const pets = [
+    {
+        type: null,
+        colour: "brown",
+        age: 10,
+        friendly: true,
+    },
+    {
+        colour: "orange",
+        age: 7,
+        friendly: false,
+    },
+    {
+        type: "duck",
+        colour: "#00ff00",
+        age: 20,
+        friendly: false,
+    },
+];
+// Select the pet-container class
+const petContainer = document.querySelector(".pet-container");
+console.log(petContainer);
 
-// for (initialization; condition; increment;) {
 
-// }
+// Create a html variable to hold our html in it when we use the loop
 
-// for (let i = 0; i < 5; i++) {
-//     console.log(i);
-// }
+// Loop over the array
+// change the innerHTML
+// square brackets are used for arrays
 
-for (let i = 1; i <= 10; i++) {
-    console.log(i);
+const totalItemsPets = pets.length;
+
+console.log(totalItemsPets);
+
+let html ="";
+
+for(let i = 0; i < totalItemsPets; i++) {
+    console.log(pets[i].colour);
+    console.log(pets[i].age);
+    html += `
+        <div>
+            <p style="color: ${pets[i].colour}" >Colour : ${pets[i].colour}</p>
+            <h2>Age: ${pets[i].age}</h2>
+            <p>Friendly: ${pets[i].friendly ? "Yes its friendly" : "No its not friendly"}</p>
+        </div>
+    `;
+    console.log(html);
 }
 
-            // 0         1       2       3
-const cars = ["Tesla", "BMW", "Volvo", "VW"];
-
-console.log(cars[0]);
-console.log(cars[3]);
-console.log(cars.length);
-
-const totalNumberOfCars = cars.length;
-
-for (let i = 0; i < totalNumberOfCars; i++) {
-    console.log(cars[i]);
-}
-
-// 0 // good
-// 1 
-// 2
-// 3
-// 4
-
-// i = 0
-// true
-// i = 1
-
-// i = 1
-// true
-// console.log (1)
-// 1 + 1 = 2
-
-// i = 2
-// true
-// console.log (2)
-// increment 2 + 1 
-// i = 3
-
-// true
-// 3 + 1
-// console.log (3)
-// i = 4
-
-// true
-// 4 + 1
-// console.log (4)
-
-// i = 5
-// false
-
-// it goes like this until the condition is false
-
-                // 0        1          2
-const fruits = ["Apple", "Banana", "Cherry"];
-
-const totalNumberOfFruits = fruits.length;
-
-
-for (let i = 0; i < totalNumberOfFruits; i++) {
-    console.log(fruits[i]);
-}
-
-// Get the last item in the array
-console.log(fruits.length -1);
-
-const LastItemInTheArray = fruits.length -1;
-console.log(fruits[LastItemInTheArray]);
-
-
-
+petContainer.innerHTML = html;
