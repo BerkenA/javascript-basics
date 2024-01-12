@@ -34,9 +34,6 @@ for(let i=0; i < totalNews; i++){
 `}
 }
 
-
-
-
 newsContainer.innerHTML = newsItems;
 
 
