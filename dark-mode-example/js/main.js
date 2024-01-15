@@ -27,7 +27,7 @@ console.log(isDarkMode);
 function toggleMode (){
     isDarkMode = !isDarkMode; //if its true and you click it goes to false and the other way around
     //will use localstorage to save your choice
-    window.localStorage.getItem("darkMode", isDarkMode);
+    window.localStorage.getItemetItem("darkMode", isDarkMode);
 
     if (isDarkMode){
         body.style.backgroundColor = "#0A0A0A";
